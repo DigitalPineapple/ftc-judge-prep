@@ -1,0 +1,100 @@
+{
+  "season": "2026-27",
+  "revision": "26-27.1",
+  "sources": [
+    "https://ftc-resources.firstinspires.org/ftc/archive/2027/event/interview-feedback",
+    "https://ftc-resources.firstinspires.org/ftc/archive/2027/event/award-summary",
+    "https://ftc-resources.firstinspires.org/ftc/archive/2027/event/judging-guide"
+  ],
+  "scales": {
+    "required": {
+      "levels": ["not_observed", "observed"],
+      "definitions": {
+        "observed": "The team clearly addressed, displayed, or documented the mandatory requirement during the interview.",
+        "not_observed": "The team did not mention, display, or document the mandatory requirement, or provided insufficient or contradictory information during the interview."
+      }
+    },
+    "encouraged": {
+      "levels": ["n/a", "developing", "solid", "exemplary"],
+      "definitions": {
+        "n/a": "Not addressed in the interview.",
+        "developing": "The team shows initial effort or intent regarding the criterion, but the execution is basic, early-stage, or lacks clear evidence and measured results.",
+        "solid": "The team thoroughly meets expectations with clear evidence, well-executed processes, and practical examples. They demonstrate a clear understanding of their work.",
+        "exemplary": "The team goes beyond standard expectations with outstanding innovation, exceptional depth, measurable impact, or highly reflective lessons learned."
+      }
+    },
+    "tieBreak": "If a team falls between designations, use the higher designation."
+  },
+  "awards": {
+    "connect": {
+      "name": "Connect Award",
+      "group": "team_attribute",
+      "criteria": [
+        { "id": "connect-1", "kind": "required", "text": "Team demonstrates professional development competency by explaining its plan for developing team member skills, including both A. the team's goals for learning, and B. the steps the team has taken or will take to reach those goals." },
+        { "id": "connect-2", "kind": "encouraged", "text": "Team demonstrates networking competency by building and maintaining meaningful in-person or virtual relationships with professionals in STEM." },
+        { "id": "connect-3", "kind": "encouraged", "text": "The team demonstrates collaboration competency by actively working with members of the engineering community through mentoring, knowledge sharing, technical guidance, or collaborative activities." }
+      ]
+    },
+    "reach": {
+      "name": "Reach Award",
+      "group": "team_attribute",
+      "criteria": [
+        { "id": "reach-1", "kind": "required", "text": "Team demonstrates outreach planning competency by clearly explaining all of the following: A. its outreach objectives, B. the strategy behind its outreach activities, and C. how these activities support the growth of the FIRST community." },
+        { "id": "reach-2", "kind": "required", "text": "Team demonstrates successful recruitment of new teams, coaches, mentors, or volunteers who have not previously participated in the FIRST community." },
+        { "id": "reach-3", "kind": "encouraged", "text": "Team demonstrates strong communication competencies by serving as an ambassador for FIRST and increasing public awareness of FIRST programs through effective outreach and communication." },
+        { "id": "reach-4", "kind": "encouraged", "text": "Demonstrates media and promotion competencies by developing creative, continuously improving outreach materials that effectively introduce both the team and FIRST to the public." }
+      ]
+    },
+    "sustain": {
+      "name": "Sustain Award",
+      "group": "team_attribute",
+      "criteria": [
+        { "id": "sustain-1", "kind": "required", "text": "Team demonstrates organizational sustainability competency by explaining its plans for long-term success, including one or more of the following: A. financial sustainability, B. season planning, and/or C. long-term team sustainability objectives." },
+        { "id": "sustain-2", "kind": "required", "text": "Team demonstrates project management competency by explaining how it measures, reviews, and tracks progress toward its sustainability plans and objectives." },
+        { "id": "sustain-3", "kind": "encouraged", "text": "Team demonstrates leadership development competency through clearly defined team roles and an intentional process for preparing future student leaders." },
+        { "id": "sustain-4", "kind": "encouraged", "text": "Team demonstrates risk management competency by identifying organizational constraints, implementing mitigation strategies, and adapting plans when challenges arise." }
+      ]
+    },
+    "innovate": {
+      "name": "Innovate Award",
+      "group": "machine_creativity_innovation",
+      "criteria": [
+        { "id": "innovate-1", "kind": "required", "text": "The team demonstrates their engineering competency by showing examples of their engineering work that explain how the team developed their design." },
+        { "id": "innovate-2", "kind": "required", "text": "The design of the ROBOT or ROBOT MECHANISM is creative, unique, or both." },
+        { "id": "innovate-3", "kind": "required", "text": "The creative design must be stable and reliable. It must help the team reach its game goals most of the time.", "evaluatedInInitialInterview": false },
+        { "id": "innovate-4", "kind": "encouraged", "text": "Designs often involve risks. The team should explain how they reduced those risks." }
+      ]
+    },
+    "control": {
+      "name": "Control Award",
+      "group": "machine_creativity_innovation",
+      "criteria": [
+        { "id": "control-1", "kind": "required", "text": "Team must submit a PORTFOLIO that includes: A. hardware or software control COMPONENTS on the ROBOT, B. the challenges each COMPONENT or system solves, and C. the function of each COMPONENT or system.", "evaluatedInInitialInterview": false },
+        { "id": "control-2", "kind": "required", "text": "The team must use one or more hardware or software solutions that use external feedback to control the ROBOT and improve how it performs." },
+        { "id": "control-3", "kind": "encouraged", "text": "The control solution(s) should work consistently during most MATCHES.", "evaluatedInInitialInterview": false },
+        { "id": "control-4", "kind": "encouraged", "text": "The team can explain how reliable their solution is. They can show this by demonstrating that it works, or by explaining how it could be improved." },
+        { "id": "control-5", "kind": "encouraged", "text": "The team should describe what they learned while using the engineering process to develop their control solutions (sensors, hardware, algorithms, or a combination)." }
+      ]
+    },
+    "design": {
+      "name": "Design Award",
+      "group": "machine_creativity_innovation",
+      "criteria": [
+        { "id": "design-1", "kind": "required", "text": "Team must describe or demonstrate that their ROBOT is elegant, efficient (simple to build and operate), and/or practical to maintain." },
+        { "id": "design-2", "kind": "required", "text": "The design of the entire ROBOT, or the detailed process used to create it, must be considered, not just one COMPONENT." },
+        { "id": "design-3", "kind": "encouraged", "text": "The ROBOT stands out from other ROBOTS because of its appearance and how well it functions.", "evaluatedInInitialInterview": false },
+        { "id": "design-4", "kind": "encouraged", "text": "The team has clearly thought through the reasons behind their design choices, such as inspiration or function." },
+        { "id": "design-5", "kind": "encouraged", "text": "The design works consistently and aligns with the team's game plan or strategy." }
+      ]
+    },
+    "think": {
+      "name": "Think Award",
+      "group": "portfolio",
+      "note": "Primarily portfolio-based; not on the Judging Feedback Form. Interview questions still exist in the bank.",
+      "criteria": [
+        { "id": "think-1", "kind": "required", "text": "Team must submit a PORTFOLIO that includes at least one of: A. evidence of use of the engineering process, B. lessons learned and applied relating to the design of their ROBOT, C. comparing choices (different ideas and why one was chosen), and/or D. math choices (how math informed design or programming decisions).", "evaluatedInInitialInterview": false },
+        { "id": "think-2", "kind": "encouraged", "text": "Information in the PORTFOLIO should be easy to read and easy to find.", "evaluatedInInitialInterview": false }
+      ]
+    }
+  }
+}

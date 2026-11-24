@@ -1,0 +1,4 @@
+{
+  "active": "2026-27",
+  "note": "To switch seasons: add data/rubrics/<season>/rubric.json (same schema) and change 'active'. Users can also import a rubric.json from Settings at runtime."
+}

@@ -1,0 +1,289 @@
+{
+  "season": "2026-27",
+  "revision": "26-27.1",
+  "source": "data/sources/2026-27/question-bank.pdf",
+  "sourceUrl": "https://ftc-resources.firstinspires.org/ftc/archive/2027/event/question-bank",
+  "guardrails": [
+    "Never ask about religion, politics, gender, disabilities, or how students are doing in school.",
+    "Do not compare the team to other teams; focus on the team's own strengths and unique qualities."
+  ],
+  "questions": [
+    {
+      "id": "think-01", "topic": "think",
+      "text": "Can you walk us through your brainstorming process?",
+      "followups": [
+        { "text": "Did you use trade-off or cost/benefit analysis, and what methods proved a design would work?" }
+      ]
+    },
+    {
+      "id": "think-02", "topic": "think",
+      "text": "How did your team improve or iterate on your robot throughout the season?",
+      "followups": [
+        { "text": "Did you ever start over?" },
+        { "text": "What data told you a change was needed?" }
+      ]
+    },
+    { "id": "think-03", "topic": "think", "text": "Can you describe your engineering design process?" },
+    {
+      "id": "think-04", "topic": "think",
+      "text": "Give us an example of a lesson your team learned while working on your robot this season?",
+      "followups": [
+        { "text": "What did you do differently as a result, and how did mentors contribute to that learning?" }
+      ]
+    },
+    {
+      "id": "think-05", "topic": "think",
+      "text": "How did your team track accomplishments or challenges throughout the season?",
+      "followups": [{ "text": "What was your biggest of each?" }]
+    },
+    {
+      "id": "think-06", "topic": "think",
+      "text": "Did your team use a method to measure progress to their goals throughout the season?",
+      "followups": [{ "text": "How did you know if you were on track?" }]
+    },
+
+    {
+      "id": "connect-01", "topic": "connect",
+      "text": "How did your team set your goals and strategies for this season, and are you meeting them?",
+      "sourceText": "How did your team set your goals and strategies for this season – and are you meeting them?"
+    },
+    {
+      "id": "connect-02", "topic": "connect",
+      "text": "Has your team brought in new STEM professionals, and have any become mentors?",
+      "followups": [
+        { "text": "What have you learned from them?", "sourceText": "What have your learned from them?" }
+      ]
+    },
+    {
+      "id": "connect-03", "topic": "connect",
+      "text": "Did your team create a learning plan this season?",
+      "followups": [
+        { "text": "How did you decide what's on it or, if not, how did you figure out what training was needed?" }
+      ]
+    },
+    {
+      "id": "connect-04", "topic": "connect",
+      "text": "What skills has your team learned by being a part of the team, and what impact has that had?"
+    },
+    {
+      "id": "connect-05", "topic": "connect",
+      "text": "How does your team collaborate with other FIRST teams locally or online?",
+      "followups": [
+        { "text": "How do you choose what to work on together, and what have you learned?" }
+      ]
+    },
+
+    {
+      "id": "reach-01", "topic": "reach",
+      "text": "What community service or outreach does your team do, and who organizes it?",
+      "followups": [{ "text": "What are you trying to accomplish?" }]
+    },
+    {
+      "id": "reach-02", "topic": "reach",
+      "text": "What has resulted from your outreach, and how has it supported the promotion of FIRST?",
+      "sourceText": "What has resulted from your outreach – and how has it supported the promotion of FIRST?"
+    },
+    {
+      "id": "reach-03", "topic": "reach",
+      "text": "How does your team plan its outreach activities to achieve your outreach goals?",
+      "sourceText": "How does your team plan its outreach activities to achieve your outreach goals"
+    },
+    {
+      "id": "reach-04", "topic": "reach",
+      "text": "Has your team successfully recruited anyone to participate in FIRST?",
+      "followups": [
+        { "text": "Can you give us some examples?" },
+        { "text": "What are they doing now?" }
+      ]
+    },
+    {
+      "id": "reach-05", "topic": "reach",
+      "text": "Do you consider your team to be an ambassador for FIRST?",
+      "followups": [{ "text": "What does that look like, and what impact are you having?" }]
+    },
+    {
+      "id": "reach-06", "topic": "reach",
+      "text": "How does your team market itself and build awareness of FIRST?",
+      "followups": [{ "text": "How have you adjusted based on feedback?" }]
+    },
+    {
+      "id": "reach-07", "topic": "reach",
+      "text": "How does your team create and improve its outreach or promotional materials?"
+    },
+
+    {
+      "id": "sustain-01", "topic": "sustain",
+      "text": "Does your team have a sustainability plan, including how you fundraise, budget, and avoid relying on one or two big income sources?",
+      "sourceText": "Does your team have a sustainability plan: including how you fundraise, budget, and avoid relying on one or two big income sources?",
+      "followups": [
+        { "text": "Can you describe your sustainability plan?" },
+        { "text": "Can you describe how you fundraise, and budget?" }
+      ]
+    },
+    {
+      "id": "sustain-02", "topic": "sustain",
+      "text": "What risks or constraints could affect your team's future, and how do you plan for them?"
+    },
+    {
+      "id": "sustain-03", "topic": "sustain",
+      "text": "How does your team plan a season (timeline, tools, tracking progress) and how do you balance short-term needs against long-term goals?"
+    },
+    {
+      "id": "sustain-04", "topic": "sustain",
+      "text": "How are roles, sub-teams, and leadership positions assigned and tracked over a season?"
+    },
+    {
+      "id": "sustain-05", "topic": "sustain",
+      "text": "How do you get new members engaged from the start, and how do you grow them into future leaders?"
+    },
+    {
+      "id": "sustain-06", "topic": "sustain",
+      "text": "Apart from time, what gets in the way of your team's best work and how do you respond to those risks?"
+    },
+
+    {
+      "id": "innovate-01", "topic": "innovate",
+      "text": "Walk us through your design.",
+      "sourceText": "Walk us through your design:",
+      "followups": [
+        {
+          "text": "How did you brainstorm and decide what to implement?",
+          "sourceText": "How did you brainstorm and decided what to implement?"
+        },
+        { "text": "Did your goals or process change during the season?" }
+      ]
+    },
+    {
+      "id": "innovate-02", "topic": "innovate",
+      "text": "Is there an aspect of your robot that you consider unique or creative?"
+    },
+    {
+      "id": "innovate-03", "topic": "innovate",
+      "text": "Which game objectives can your robot reliably achieve?",
+      "followups": [
+        { "text": "What criteria did you use to call the design a success?" },
+        { "text": "How did your team test for reliability?" }
+      ]
+    },
+    {
+      "id": "innovate-04", "topic": "innovate",
+      "text": "What evolution did your robot go through this season, and what did you learn from what worked and didn't?"
+    },
+    {
+      "id": "innovate-05", "topic": "innovate",
+      "text": "What risks or trade-offs did your team identify in the design and what unexpected failures did you encounter or address?"
+    },
+    {
+      "id": "innovate-06", "topic": "innovate",
+      "text": "Can you tell us what evolution or iteration that your robot features took this season?",
+      "followups": [{ "text": "Did your team use any process for determining what changes to make?" }]
+    },
+    {
+      "id": "innovate-07", "topic": "innovate",
+      "text": "Can you share any CAD drawings or sketches or photos that highlight your design evolution?",
+      "notForInitialInterview": true
+    },
+
+    {
+      "id": "control-01", "topic": "control",
+      "text": "What sensors and hardware did you use, and what worked and didn't?",
+      "sourceText": "What sensors and hardware did you use: what worked, what didn't,",
+      "note": "The official PDF text for this question is cut off after 'and how did you'. Truncated here; replace if FIRST publishes a corrected revision."
+    },
+    {
+      "id": "control-02", "topic": "control",
+      "text": "Tell us about your code.",
+      "sourceText": "Tell us about your code:",
+      "followups": [
+        { "text": "What libraries or custom routines did you write?" },
+        { "text": "Which software choices worked or didn't?" }
+      ]
+    },
+    {
+      "id": "control-03", "topic": "control",
+      "text": "How does your robot know where it is on the field?",
+      "sourceText": "Know where it is on the field?",
+      "followups": [
+        {
+          "text": "How does your robot control acquisition of scoring elements?",
+          "sourceText": "Control acquisition of scoring elements?"
+        },
+        {
+          "text": "How does your robot measure and control the speed of the motors?",
+          "sourceText": "Measure and control the speed of the motors?"
+        }
+      ]
+    },
+    {
+      "id": "control-04", "topic": "control",
+      "text": "What specific game tasks was your control system built to solve?",
+      "followups": [{ "text": "What did you automate for Auto and/or Teleop?" }]
+    },
+    {
+      "id": "control-05", "topic": "control",
+      "text": "Walk us through the engineering process your team followed to develop your robot's most complex autonomous routine or control feature.",
+      "sourceText": "Walk us through the engineering process your team followed to develop your robot's most complex autonomous routine or control feature?",
+      "followups": [
+        { "text": "Did you find that it worked well for your team?" },
+        { "text": "What was the biggest obstacle or failure your team encountered?" },
+        { "text": "How did your team measure reliability?" }
+      ]
+    },
+
+    {
+      "id": "design-01", "topic": "design",
+      "text": "How did your team arrive at the overall design of your robot?",
+      "followups": [
+        { "text": "What tools did you use?" },
+        { "text": "What game/design strategies did you set out to meet?" }
+      ]
+    },
+    {
+      "id": "design-02", "topic": "design",
+      "text": "How does your team measure whether a design decision actually meets your goals?",
+      "followups": [{ "text": "How do you document and plan around those goals?" }]
+    },
+    {
+      "id": "design-03", "topic": "design",
+      "text": "Did your team look at how components work together as a system, and how did you balance functionality, simplicity, and reliability against each other?"
+    },
+    {
+      "id": "design-04", "topic": "design",
+      "text": "What specific problem came up this season that changed your current design?",
+      "followups": [{ "text": "What did your team choose to optimize when you could not do everything?" }]
+    },
+    {
+      "id": "design-05", "topic": "design",
+      "text": "Did your design originate from an existing concept (e.g., in industry, another sport, or a previous season), or something novel?",
+      "followups": [{ "text": "Did your team have to compromise or change any of your goals to make it work?" }]
+    },
+
+    { "id": "judges_choice-01", "topic": "judges_choice", "text": "Tell us your story. How is your team making a difference through FIRST?", "sourceText": "Tell us your story – how is your team making a difference through FIRST?" },
+    {
+      "id": "judges_choice-02", "topic": "judges_choice",
+      "text": "Can you give us a couple of examples to tell us what it has meant to you to be on a FIRST team?",
+      "sourceText": "Can you give us a couple of examples to tell us what has it meant to you to be on a FIRST team?"
+    },
+    { "id": "judges_choice-03", "topic": "judges_choice", "text": "Can you tell us about a challenge that helped your team to grow or change?" },
+    { "id": "judges_choice-04", "topic": "judges_choice", "text": "In what ways is your team unique?" },
+    { "id": "judges_choice-05", "topic": "judges_choice", "text": "What is the one thing that we did not ask about that you most want the Judges to know?" },
+    {
+      "id": "judges_choice-06", "topic": "judges_choice",
+      "text": "Describe a major failure or setback your team experienced. It could be a robot component failure, a lost grant, or a team conflict.",
+      "sourceText": "Describe a major failure or setback your team experienced",
+      "followups": [
+        { "text": "How did this failure force your team to think differently, leading to an unforeseen positive outcome or discovery that has changed how your team operates?" }
+      ]
+    },
+    {
+      "id": "judges_choice-07", "topic": "judges_choice",
+      "text": "How did your team quickly bridge the knowledge gap to become competitive?",
+      "audience": "new_team"
+    },
+    {
+      "id": "judges_choice-08", "topic": "judges_choice",
+      "text": "How did your team's knowledge transfer lead to a part or subsystem that was completely built and owned by a new member?",
+      "audience": "experienced_team"
+    }
+  ]
+}

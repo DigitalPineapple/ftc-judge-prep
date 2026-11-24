@@ -1,0 +1,19 @@
+{
+  "personas": [
+    { "id": "us-f", "label": "US accent – female (Olivia)", "locale": "en-US", "voice": "en-US-Olivia:MAI-Voice-2.1" },
+    { "id": "us-m", "label": "US accent – male (Jasper)", "locale": "en-US", "voice": "en-US-Jasper:MAI-Voice-2.1" },
+    { "id": "uk-f", "label": "British accent – female (Sonia)", "locale": "en-GB", "voice": "en-GB-SoniaNeural" },
+    { "id": "uk-m", "label": "British accent – male (Thomas)", "locale": "en-GB", "voice": "en-GB-ThomasNeural" },
+    { "id": "india-f", "label": "Indian accent – female (Neerja)", "locale": "en-IN", "voice": "en-IN-NeerjaNeural" },
+    { "id": "india-m", "label": "Indian accent – male (Prabhat)", "locale": "en-IN", "voice": "en-IN-PrabhatNeural" },
+    { "id": "singapore-f", "label": "Singapore accent – female (Luna)", "locale": "en-SG", "voice": "en-SG-LunaNeural" },
+    { "id": "singapore-m", "label": "Singapore accent – male (Wayne)", "locale": "en-SG", "voice": "en-SG-WayneNeural" },
+    { "id": "hongkong-f", "label": "Hong Kong accent – female (Yan)", "locale": "en-HK", "voice": "en-HK-YanNeural" },
+    { "id": "hongkong-m", "label": "Hong Kong accent – male (Sam)", "locale": "en-HK", "voice": "en-HK-SamNeural" },
+    { "id": "turkish-f", "label": "Turkish accent – female (Elif)", "locale": "en-US", "voice": "tr-TR-Elif:MAI-Voice-2.1" },
+    { "id": "turkish-m", "label": "Turkish accent – male (Aydin)", "locale": "en-US", "voice": "tr-TR-Aydin:MAI-Voice-2.1" },
+    { "id": "hebrew-f", "label": "Hebrew accent – female (Hila)", "locale": "en-US", "voice": "he-IL-HilaNeural" },
+    { "id": "hebrew-m", "label": "Hebrew accent – male (Avri)", "locale": "en-US", "voice": "he-IL-AvriNeural" },
+    { "id": "arabic-m", "label": "Arabic accent – male (Rashid)", "locale": "en-US", "voice": "ar-AE-Rashid:DragonHDLatestNeural" }
+  ]
+}
