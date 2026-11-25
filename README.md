@@ -1,55 +1,68 @@
-# FTC Judge Prep
+# FTC Judge Prep 🤖🎤
 
-Desktop app (Electron + React + TypeScript) for practicing FIRST Tech Challenge judging interviews.
-Practice tool only. It is not an official FIRST judging tool and does not predict judging results.
+Practice your FIRST Tech Challenge judging interview before the big day!
+
+FTC Judge Prep plays the part of a judge. It asks you real-style questions, listens to your answers, and then gives you tips on how to do even better.
+
+> This is a practice tool made by the community. It is **not** an official FIRST tool, and it can't tell you how you'll score at a real event.
+
+## What can you do with it?
+
+- **Mock interview**: a 5-minute practice interview, just like the real thing.
+- **Pit interview**: pick one topic (Control, Design, Innovate, Connect, Reach, or Sustain) and practice it.
+- **Random question**: get one surprise question and practice answering it.
+- **Question bank**: browse all the questions and prepare ahead of time.
+- **Feedback**: after you answer, get friendly tips based on the FTC judging rubric.
+- **History**: look back at past practice sessions and see how you've improved.
+- **Video (optional)**: record yourself so you can watch it back. Your video is never sent anywhere.
+
+You can listen to the judge ask questions out loud (Audio mode) or just read them (Text mode).
 
 ## Install
-Download the latest installer from the [Releases page](https://github.com/DigitalPineapple/ftc-judge-prep/releases/latest).
-The builds are unsigned, so your OS will show a warning the first time.
 
-**macOS (Apple Silicon)**
-1. Download `ftc-judge-prep-<version>.dmg`, open it, and drag the app to Applications.
-2. Don't double-click it the first time: right-click (or Control-click) the app and choose **Open**, then **Open** again.
-3. If macOS says the app is "damaged" or still blocks it, run: `xattr -cr "/Applications/ftc-judge-prep.app"`
-   (or allow it in System Settings → Privacy & Security → **Open Anyway**).
+Go to the [**Releases page**](https://github.com/DigitalPineapple/ftc-judge-prep/releases/latest) and download the file for your computer:
 
-**Windows**
-1. Download `ftc-judge-prep-<version>-setup.exe` and run it.
-2. If SmartScreen shows "Windows protected your PC", click **More info** → **Run anyway**.
+| Your computer | Download |
+|---|---|
+| Mac (M1, M2, M3 or newer) | the `.dmg` file |
+| Windows | the `-setup.exe` file |
 
-**First launch**
-- Use the "One-time downloads" card to fetch the speech model (~75 MB) and, for Audio mode, the judge voice pack
-  (~115 MB, the `audio-<season>` release asset).
-- Open Settings and add your AI endpoint and key (feedback and judge voice need them).
-- Allow microphone (and camera, if you record video) access when prompted.
+Because the app is brand new and unsigned, your computer will show a warning the first time. The app is safe to open. Here's how to get past it:
 
-## Commands
-```
-npm install
-npm run dev              # run the app
-npm run typecheck
-npm run validate-bank    # checks every bank question/follow-up exists in data/sources/<season>/question-bank.pdf
-npm run gen-audio        # pre-generate bank audio (see below); skips existing files
-npm run build:mac | build:win
-```
+**On a Mac**
+1. Open the `.dmg` and drag the app into **Applications**.
+2. The first time, **right-click** the app and choose **Open**, then click **Open** again.
+3. Still blocked? Go to **System Settings → Privacy & Security** and click **Open Anyway**.
+   (Ask an adult or mentor for help if you need it.)
 
-## Content
-- `data/bank/<season>/questions.json`: curated from FIRST's Judging Question Bank PDF. `sourceText` records the
-  verbatim PDF wording wherever the spoken `text` was lightly fixed (typos, trailing colons).
-- `data/rubrics/<season>/rubric.json` + `data/rubrics/manifest.json` (`active` season).
-  To replace the rubric: add a new season folder and change `active`, or use Rubric > Import in the app.
-- `data/sources/`: original FIRST PDFs, used by the validator and excluded from the installer.
+**On Windows**
+1. Run the setup file.
+2. If you see "Windows protected your PC", click **More info**, then **Run anyway**.
 
-## Generating bank audio
-```
-npm run gen-audio [season] [personaId...]
-```
-Uses Azure Speech (`SPEECH_ENDPOINT`, optional `SPEECH_KEY`, else `az login`; see `.env.example`). One set per judge persona in `data/personas.json` (voice + accent). Output: `data/audio/<season>/manifest.<persona>.json` plus mp3s. Not bundled: run `npm run pack-audio` and upload `dist/audio-<season>.zip` to the `audio-<season>` release (`gh release upload audio-<season> dist/audio-<season>.zip --clobber`).
+## First time you open it
 
-## New season checklist
-1. Download the new question bank + Judging Feedback Form into `data/sources/<season>/`.
-2. Update `questions.json` and `rubric.json`; run `npm run validate-bank <season>`.
-3. Set `active` in `data/rubrics/manifest.json`; run `npm run gen-audio`.
+1. Find the **One-time downloads** card and download the speech model (~75 MB). This lets the app turn your voice into text.
+2. If you want to hear the judge speak, also download the judge voice pack (~115 MB).
+3. Open **Settings** and add your AI connection details (endpoint and key). Ask your mentor or coach if you're not sure what to put here. Feedback and the judge's voice need it.
+4. When your computer asks, allow the **microphone** (and **camera** if you want video).
+
+That's it. Pick a mode and start practicing!
+
+## Tips for practicing
+
+- Find a quiet spot and talk to the app like you're talking to a real judge.
+- Try the same question a few times. Your answers get better each round.
+- Practice with your whole team and take turns.
+- Use the feedback to find one thing to improve, then try again.
+
+## Privacy
+
+Your recordings and transcripts stay on your computer. Only the text of your answers is sent to the AI service you set up, in order to write your feedback.
+
+## For developers
+
+Want to build it from source, add a new season, or change the questions? See the [development guide](docs/DEVELOPMENT.md).
 
 ## License
+
 MIT, see [LICENSE](LICENSE). The FIRST question bank and rubric content in `data/` belongs to FIRST and is not covered by this license.
