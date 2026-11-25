@@ -389,6 +389,17 @@ select option {
   align-items: center;
 }
 
+.transcript + .actions {
+  margin-top: 18px;
+  padding-top: 16px;
+  border-top: 1px solid var(--border, #ffffff1a);
+}
+
+.transcript + .actions .btn {
+  padding: 10px 22px;
+  font-size: 15px;
+}
+
 .actions .spacer {
   flex: 1;
 }

@@ -4,9 +4,24 @@ Desktop app (Electron + React + TypeScript) for practicing FIRST Tech Challenge 
 Practice tool only. It is not an official FIRST judging tool and does not predict judging results.
 
 ## Install
-Download the installer from the Releases page (macOS `.dmg` or Windows setup `.exe`; unsigned, so your OS will warn).
-On first launch, use the "One-time downloads" card to fetch the speech model (~75 MB) and, for Audio mode, the judge
-voice pack (~115 MB, the `audio-<season>` release asset). Add your AI endpoint and key in Settings.
+Download the latest installer from the [Releases page](https://github.com/DigitalPineapple/ftc-judge-prep/releases/latest).
+The builds are unsigned, so your OS will show a warning the first time.
+
+**macOS (Apple Silicon)**
+1. Download `ftc-judge-prep-<version>.dmg`, open it, and drag the app to Applications.
+2. Don't double-click it the first time: right-click (or Control-click) the app and choose **Open**, then **Open** again.
+3. If macOS says the app is "damaged" or still blocks it, run: `xattr -cr "/Applications/ftc-judge-prep.app"`
+   (or allow it in System Settings → Privacy & Security → **Open Anyway**).
+
+**Windows**
+1. Download `ftc-judge-prep-<version>-setup.exe` and run it.
+2. If SmartScreen shows "Windows protected your PC", click **More info** → **Run anyway**.
+
+**First launch**
+- Use the "One-time downloads" card to fetch the speech model (~75 MB) and, for Audio mode, the judge voice pack
+  (~115 MB, the `audio-<season>` release asset).
+- Open Settings and add your AI endpoint and key (feedback and judge voice need them).
+- Allow microphone (and camera, if you record video) access when prompted.
 
 ## Commands
 ```
