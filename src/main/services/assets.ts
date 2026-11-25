@@ -47,7 +47,10 @@ export async function downloadAudio(season: string): Promise<void> {
   }
   const zip = new Uint8Array(got)
   let off = 0
-  for (const c of chunks) (zip.set(c, off), (off += c.byteLength))
+  for (const c of chunks) {
+    zip.set(c, off)
+    off += c.byteLength
+  }
 
   const files = unzipSync(zip, { filter: (f) => /^(manifest\.[\w-]+\.json|[a-f0-9]{16}\.mp3)$/.test(f.name) })
   if (!Object.keys(files).some((n) => n.startsWith('manifest.'))) throw new Error('The audio pack is not valid.')
