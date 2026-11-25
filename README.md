@@ -35,3 +35,6 @@ Uses Azure Speech (`SPEECH_ENDPOINT`, optional `SPEECH_KEY`, else `az login`; se
 1. Download the new question bank + Judging Feedback Form into `data/sources/<season>/`.
 2. Update `questions.json` and `rubric.json`; run `npm run validate-bank <season>`.
 3. Set `active` in `data/rubrics/manifest.json`; run `npm run gen-audio`.
+
+## License
+MIT, see [LICENSE](LICENSE). The FIRST question bank and rubric content in `data/` belongs to FIRST and is not covered by this license.
