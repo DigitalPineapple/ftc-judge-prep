@@ -6,6 +6,8 @@ FTC Judge Prep plays the part of a judge. It asks you real-style questions, list
 
 > This is a practice tool made by the community. It is **not** an official FIRST tool, and it can't tell you how you'll score at a real event.
 
+![FTC Judge Prep home screen](docs/screenshot.png)
+
 ## What can you do with it?
 
 - **Mock interview**: a 5-minute practice interview, just like the real thing.
