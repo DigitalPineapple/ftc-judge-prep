@@ -84,6 +84,14 @@ export function SettingsView(): React.JSX.Element {
         </button>
         <span className="muted">{msg}</span>
       </div>
+
+      <h3 style={{ marginTop: 28 }}>About</h3>
+      <p className="muted">
+        FTC Judge Prep is an unofficial practice tool and is not affiliated with or endorsed by FIRST. Questions and feedback are
+        based on public FTC judging materials and are for practice only; they do not predict how real judges will score. Real
+        judging interviews do not allow recording, so use recordings from this app for practice at home only. Your recordings and
+        transcripts stay on this computer; only text sent to your configured AI service leaves it.
+      </p>
     </div>
   )
 }
