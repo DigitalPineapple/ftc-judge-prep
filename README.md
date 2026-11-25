@@ -3,10 +3,10 @@
 Desktop app (Electron + React + TypeScript) for practicing FIRST Tech Challenge judging interviews.
 Practice tool only. It is not an official FIRST judging tool and does not predict judging results.
 
-## Status
-Scaffold + content pipeline. Implemented: question bank (2026-27), rubric (2026-27, replaceable),
-bank browser with audio playback, rubric viewer/importer, bank validator, audio generator.
-Not yet built: recording, STT, interview engine, feedback, video.
+## Install
+Download the installer from the Releases page (macOS `.dmg` or Windows setup `.exe`; unsigned, so your OS will warn).
+On first launch, use the "One-time downloads" card to fetch the speech model (~75 MB) and, for Audio mode, the judge
+voice pack (~115 MB, the `audio-<season>` release asset). Add your AI endpoint and key in Settings.
 
 ## Commands
 ```
@@ -29,7 +29,7 @@ npm run build:mac | build:win
 ```
 npm run gen-audio [season] [personaId...]
 ```
-Uses Azure Speech (`SPEECH_ENDPOINT`, optional `SPEECH_KEY`, else `az login`; see `.env.example`). One set per judge persona in `data/personas.json` (voice + accent). Output: `data/audio/<season>/manifest.<persona>.json` plus mp3s, bundled into the installer.
+Uses Azure Speech (`SPEECH_ENDPOINT`, optional `SPEECH_KEY`, else `az login`; see `.env.example`). One set per judge persona in `data/personas.json` (voice + accent). Output: `data/audio/<season>/manifest.<persona>.json` plus mp3s. Not bundled: run `npm run pack-audio` and upload `dist/audio-<season>.zip` to the `audio-<season>` release (`gh release upload audio-<season> dist/audio-<season>.zip --clobber`).
 
 ## New season checklist
 1. Download the new question bank + Judging Feedback Form into `data/sources/<season>/`.
